@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BB2FE957-3DE2-45AE-986A-A44D66BD041C}</ProjectGuid>
+    <RootNamespace>ImageMeasure</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v100</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v100</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>D:\Code\ImageMeasure\thirdpart\video\include;C:\Program Files %28x86%29\Visual Leak Detector\include;..\thirdpart\sqlite3;.\network;..\thirdpart\eigen3;..\thirdpart\common;..\thirdpart\common\Xml;..\thirdpart\common\debug;..\thirdpart\socket;C:\Program Files (x86)\PCL 1.6.0\3rdParty\VTK\include\vtk-5.8;C:\Program Files (x86)\PCL 1.6.0\include\pcl-1.6;C:\Program Files (x86)\PCL 1.6.0\3rdParty\Eigen\include;C:\Program Files (x86)\PCL 1.6.0\3rdParty\Boost\include;C:\Program Files (x86)\OpenNI\Include;C:\Program Files (x86)\PCL 1.6.0\3rdParty\FLANN\include;C:\Program Files (x86)\PCL 1.6.0\3rdParty\Qhull\include;D:\sdk\opencv\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <MultiProcessorCompilation>
+      </MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>D:\Code\ImageMeasure\thirdpart\video\lib;C:\Program Files %28x86%29\Visual Leak Detector\lib\Win32;..\thirdpart\socket\x86;..\thirdpart\sqlite3;D:\sdk\opencv\build\x86\vc10\lib;D:/Program Files (x86)/PCL 1.6.0/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>VideoCaptureModule.lib;sqlite3.lib;HPSocket_D.lib;winmm.lib;opencv_calib3d249d.lib;opencv_contrib249d.lib;opencv_core249d.lib;opencv_features2d249d.lib;opencv_flann249d.lib;opencv_gpu249d.lib;opencv_highgui249d.lib;opencv_imgproc249d.lib;opencv_legacy249d.lib;opencv_ml249d.lib;opencv_objdetect249d.lib;opencv_ts249d.lib;opencv_video249d.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;C:\Program Files (x86)\PCL 1.6.0\3rdParty\Boost\lib\libboost_system-vc100-mt-gd-1_49.lib;C:\Program Files (x86)\PCL 1.6.0\3rdParty\Boost\lib\libboost_filesystem-vc100-mt-gd-1_49.lib;C:\Program Files (x86)\PCL 1.6.0\3rdParty\Boost\lib\libboost_thread-vc100-mt-gd-1_49.lib;C:\Program Files (x86)\PCL 1.6.0\3rdParty\Boost\lib\libboost_date_time-vc100-mt-gd-1_49.lib;C:\Program Files (x86)\PCL 1.6.0\3rdParty\Boost\lib\libboost_iostreams-vc100-mt-gd-1_49.lib;C:\Program Files (x86)\PCL 1.6.0\lib\pcl_common_debug.lib;C:\Program Files (x86)\PCL 1.6.0\lib\pcl_octree_debug.lib;C:\Program Files (x86)\OpenNI\Lib\openNI.lib;C:\Program Files (x86)\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\vtkCommon-gd.lib;C:\Program Files (x86)\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\vtkRendering-gd.lib;C:\Program Files (x86)\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\vtkHybrid-gd.lib;C:\Program Files (x86)\PCL 1.6.0\lib\pcl_io_debug.lib;C:\Program Files (x86)\PCL 1.6.0\3rdParty\FLANN\lib\flann_cpp_s-gd.lib;C:\Program Files (x86)\PCL 1.6.0\lib\pcl_kdtree_debug.lib;C:\Program Files (x86)\PCL 1.6.0\lib\pcl_search_debug.lib;C:\Program Files (x86)\PCL 1.6.0\lib\pcl_sample_consensus_debug.lib;C:\Program Files (x86)\PCL 1.6.0\lib\pcl_filters_debug.lib;C:\Program Files (x86)\PCL 1.6.0\lib\pcl_segmentation_debug.lib;C:\Program Files (x86)\PCL 1.6.0\lib\pcl_visualization_debug.lib;C:\Program Files (x86)\PCL 1.6.0\lib\pcl_features_debug.lib;C:\Program Files (x86)\PCL 1.6.0\3rdParty\Qhull\lib\qhullstatic_d.lib;C:\Program Files (x86)\PCL 1.6.0\lib\pcl_surface_debug.lib;C:\Program Files (x86)\PCL 1.6.0\lib\pcl_registration_debug.lib;C:\Program Files (x86)\PCL 1.6.0\lib\pcl_keypoints_debug.lib;C:\Program Files (x86)\PCL 1.6.0\lib\pcl_tracking_debug.lib;C:\Program Files (x86)\PCL 1.6.0\lib\pcl_apps_debug.lib;C:\Program Files (x86)\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\vtkGraphics-gd.lib;C:\Program Files (x86)\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\vtkverdict-gd.lib;C:\Program Files (x86)\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\vtkImaging-gd.lib;C:\Program Files (x86)\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\vtkIO-gd.lib;C:\Program Files (x86)\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\vtkFiltering-gd.lib;C:\Program Files (x86)\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\vtkDICOMParser-gd.lib;C:\Program Files (x86)\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\vtkNetCDF_cxx-gd.lib;C:\Program Files (x86)\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\vtkmetaio-gd.lib;C:\Program Files (x86)\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\vtksys-gd.lib;ws2_32.lib;comctl32.lib;wsock32.lib;C:\Program Files (x86)\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\vtksqlite-gd.lib;C:\Program Files (x86)\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\vtkpng-gd.lib;C:\Program Files (x86)\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\vtktiff-gd.lib;C:\Program Files (x86)\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\vtkzlib-gd.lib;C:\Program Files (x86)\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\vtkjpeg-gd.lib;C:\Program Files (x86)\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\vtkexpat-gd.lib;C:\Program Files (x86)\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\vtkftgl-gd.lib;C:\Program Files (x86)\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\vtkfreetype-gd.lib;opengl32.lib;C:\Program Files (x86)\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\vtkexoIIc-gd.lib;C:\Program Files (x86)\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\vtkNetCDF-gd.lib;vfw32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>D:\Code\ImageMeasure\thirdpart\video\include;C:\Program Files %28x86%29\Visual Leak Detector\include;..\thirdpart\sqlite3;.\network;..\thirdpart\eigen3;..\thirdpart\common;..\thirdpart\common\Xml;..\thirdpart\common\debug;..\thirdpart\socket;C:\Program Files (x86)\PCL 1.6.0\3rdParty\VTK\include\vtk-5.8;C:\Program Files (x86)\PCL 1.6.0\include\pcl-1.6;C:\Program Files (x86)\PCL 1.6.0\3rdParty\Eigen\include;C:\Program Files (x86)\PCL 1.6.0\3rdParty\Boost\include;C:\Program Files (x86)\OpenNI\Include;C:\Program Files (x86)\PCL 1.6.0\3rdParty\FLANN\include;C:\Program Files (x86)\PCL 1.6.0\3rdParty\Qhull\include;D:\sdk\opencv\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>D:\Code\ImageMeasure\thirdpart\video\lib;C:\Program Files %28x86%29\Visual Leak Detector\lib\Win32;..\thirdpart\socket\x86;..\thirdpart\sqlite3;D:\sdk\opencv\build\x86\vc10\lib;D:/Program Files (x86)/PCL 1.6.0/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>VideoCaptureModule.lib;sqlite3.lib;HPSocket.lib;winmm.lib;opencv_calib3d249.lib;opencv_contrib249.lib;opencv_core249.lib;opencv_features2d249.lib;opencv_flann249.lib;opencv_gpu249.lib;opencv_highgui249.lib;opencv_imgproc249.lib;opencv_legacy249.lib;opencv_ml249.lib;opencv_objdetect249.lib;opencv_ts249.lib;opencv_video249.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;C:\Program Files (x86)\PCL 1.6.0\3rdParty\Boost\lib\libboost_system-vc100-mt-1_49.lib;C:\Program Files (x86)\PCL 1.6.0\3rdParty\Boost\lib\libboost_filesystem-vc100-mt-1_49.lib;C:\Program Files (x86)\PCL 1.6.0\3rdParty\Boost\lib\libboost_thread-vc100-mt-1_49.lib;C:\Program Files (x86)\PCL 1.6.0\3rdParty\Boost\lib\libboost_date_time-vc100-mt-1_49.lib;C:\Program Files (x86)\PCL 1.6.0\3rdParty\Boost\lib\libboost_iostreams-vc100-mt-1_49.lib;C:\Program Files (x86)\PCL 1.6.0\lib\pcl_common_release.lib;C:\Program Files (x86)\PCL 1.6.0\lib\pcl_octree_release.lib;C:\Program Files (x86)\OpenNI\Lib\openNI.lib;C:\Program Files (x86)\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\vtkCommon.lib;C:\Program Files (x86)\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\vtkRendering.lib;C:\Program Files (x86)\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\vtkHybrid.lib;C:\Program Files (x86)\PCL 1.6.0\lib\pcl_io_release.lib;C:\Program Files (x86)\PCL 1.6.0\3rdParty\FLANN\lib\flann_cpp_s.lib;C:\Program Files (x86)\PCL 1.6.0\lib\pcl_kdtree_release.lib;C:\Program Files (x86)\PCL 1.6.0\lib\pcl_search_release.lib;C:\Program Files (x86)\PCL 1.6.0\lib\pcl_sample_consensus_release.lib;C:\Program Files (x86)\PCL 1.6.0\lib\pcl_filters_release.lib;C:\Program Files (x86)\PCL 1.6.0\lib\pcl_segmentation_release.lib;C:\Program Files (x86)\PCL 1.6.0\lib\pcl_visualization_release.lib;C:\Program Files (x86)\PCL 1.6.0\lib\pcl_features_release.lib;C:\Program Files (x86)\PCL 1.6.0\3rdParty\Qhull\lib\qhullstatic.lib;C:\Program Files (x86)\PCL 1.6.0\lib\pcl_surface_release.lib;C:\Program Files (x86)\PCL 1.6.0\lib\pcl_registration_release.lib;C:\Program Files (x86)\PCL 1.6.0\lib\pcl_keypoints_release.lib;C:\Program Files (x86)\PCL 1.6.0\lib\pcl_tracking_release.lib;C:\Program Files (x86)\PCL 1.6.0\lib\pcl_apps_release.lib;C:\Program Files (x86)\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\vtkGraphics.lib;C:\Program Files (x86)\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\vtkverdict.lib;C:\Program Files (x86)\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\vtkImaging.lib;C:\Program Files (x86)\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\vtkIO.lib;C:\Program Files (x86)\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\vtkFiltering.lib;C:\Program Files (x86)\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\vtkDICOMParser.lib;C:\Program Files (x86)\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\vtkNetCDF_cxx.lib;C:\Program Files (x86)\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\vtkmetaio.lib;C:\Program Files (x86)\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\vtksys.lib;ws2_32.lib;comctl32.lib;wsock32.lib;C:\Program Files (x86)\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\vtksqlite.lib;C:\Program Files (x86)\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\vtkpng.lib;C:\Program Files (x86)\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\vtktiff.lib;C:\Program Files (x86)\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\vtkzlib.lib;C:\Program Files (x86)\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\vtkjpeg.lib;C:\Program Files (x86)\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\vtkexpat.lib;C:\Program Files (x86)\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\vtkftgl.lib;C:\Program Files (x86)\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\vtkfreetype.lib;opengl32.lib;C:\Program Files (x86)\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\vtkexoIIc.lib;C:\Program Files (x86)\PCL 1.6.0\3rdParty\VTK\lib\vtk-5.8\vtkNetCDF.lib;vfw32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CameraCalculator.h" />
+    <ClInclude Include="CatelogDialog.h" />
+    <ClInclude Include="CppSQLite3.h" />
+    <ClInclude Include="EditListCtrl.h" />
+    <ClInclude Include="ImageMeasure.h" />
+    <ClInclude Include="ImageMeasureDlg.h" />
+    <ClInclude Include="ImageStore.h" />
+    <ClInclude Include="md5.h" />
+    <ClInclude Include="PanoDialog.h" />
+    <ClInclude Include="ProductList.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="Semaphore.hpp" />
+    <ClInclude Include="ServerListener.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="strtools.hpp" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="Transmission.h" />
+    <ClInclude Include="Types.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CameraCalculator.cpp" />
+    <ClCompile Include="CatelogDialog.cpp" />
+    <ClCompile Include="CppSQLite3.cpp" />
+    <ClCompile Include="EditListCtrl.cpp" />
+    <ClCompile Include="ImageMeasure.cpp" />
+    <ClCompile Include="ImageMeasureDlg.cpp" />
+    <ClCompile Include="ImageStore.cpp" />
+    <ClCompile Include="md5.cpp" />
+    <ClCompile Include="PanoDialog.cpp" />
+    <ClCompile Include="ProductList.cpp" />
+    <ClCompile Include="ServerListener.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Transmission.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ImageMeasure.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\icon1.ico" />
+    <None Include="res\ImageMeasure.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\ImageMeasure.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="ImageMeasure.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
